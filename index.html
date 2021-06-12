@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid main-container">
+        <div class="container inner-container">
+            <div class="tab-container w-100">
+                <ul class="tab-nav py-2">
+                    <li class="active">Profile</li>
+                    <li class="mx-3">Login</li>
+                    <li>Plan Info</li>
+                </ul>
+            </div>
+
+            <form class="rows active">
+                <div class="col">
+                    <div>
+                        <h1 class="heading1 py-3">Profile Settings</h1>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label class="label" for="exampleFormControlSelect1">Language</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Spanish</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="d-flex none-input">
+                        <div class="format w-50 my-2">Date Format</div>
+                        <div class="format my-2">Time Format</div>
+                    </div>
+
+                    <div class="form-row none-input">
+                        <input type="date" placeholder="DD/MM/YYYY" class="p-2 mb-4 mr-2">
+                        <input type="time" placeholder="12h (am/pm)" class="p-2 mb-4 ml-2">
+                    </div>
+
+                    <div class="form-group show-input">
+                        <label for="exampleFormControlInput1">Date Format</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1"
+                            placeholder="DD/MM/YYYY"><br>
+                        <label for="exampleFormControlInput1">Time Format</label>
+                        <input type="time" class="form-control" id="exampleFormControlInput1" placeholder="12h (am/pm)">
+
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label class="label" for="exampleFormControlSelect1">Country</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>United States</option>
+                            <option>Russia</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4 w-100">
+                        <label class="label w-100" for="exampleFormControlSelect1">Time Zone
+                            <span class="time">Currect Time:<a class="right-time"> 11:06pm</a></span>
+                        </label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Kathmandu Time</option>
+                            <option>Delhi Time</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4 row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="Settings btn btn-primary">Save Changes</button>
+                            <button type="button" class="Settings btn btn-outline-secondary">Cancle</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="rows">
+                <div class="col">
+                    <div class="email-div py-3 px-4 my-4">
+                        <h1 class="heading1">Change Email</h1>
+                        <p class="para">Current Email: udit@probooking.io</p>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Current Password">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="New Email">
+                                <button type="button" class="log btn btn-primary mt-3">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email-div py-3 px-4">
+                        <h1 class="heading1">Change Password</h1>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Current Password">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="New Email">
+                                <button type="button" class="log btn btn-primary mt-3">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="rows">
+                <div class="col"></div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
